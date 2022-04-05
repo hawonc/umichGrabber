@@ -7,3 +7,5 @@ This is an extremely simple bot without automatic date/time/name filled out beca
 Anyways this is also my first project with Selenium so if it looks terrible that's why
 
 Make sure to save the selenium webdriver for your chrome version in C:/SeleniumDrivers, or edit the code so its wherever u placed it
+
+Create an email/password and replace the 'mail@mail.com' and the 'password'
