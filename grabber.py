@@ -9,7 +9,8 @@ driver = webdriver.Chrome()
 driver.get("https://enrollmentconnect.umich.edu/portal/campus_day_lsa")
 driver.implicitly_wait(10)
 
-
+refresh_rate = 10
+# change how often to check
 dateList = [8, 11, 16, 18]
 # can be any number i just ran this so that it would find only LSA dates
 
@@ -34,9 +35,9 @@ def tour():
 
 		if (rgb == "rgba(134, 199, 67, 1)"):
 			SendEmail(recipient , message + str(number))   
-			return("green")
+			print("Mail Sent.")
 		else:
-			time.sleep(10)
+			time.sleep(refresh_rate)
 
 	time.sleep(60)
 	tour()
